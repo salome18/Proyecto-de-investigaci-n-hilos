@@ -1,0 +1,87 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{color}
+\graphicspath{ {c:/user/images/} }
+
+\begin{document}
+\begin{center}
+\includegraphics[scale=0.12]{escudo.png}
+\end{center}
+\vspace{50pt}
+\begin{center}
+\bf{\sc\Large 'Hilos en el microprocesador'}\\
+\end{center}
+\vspace{50pt}
+\begin{center}
+\begin{center}
+\bf{\sc\Large Por:}\\
+\end{center}
+\bf{\sc\Large María Salomé Garcés Montero}\\
+\end{center}
+\vspace{60pt}
+\begin{center}
+\bf{\sc\Large Facultad de ingeniería}\\
+\end{center}
+\begin{center}
+\bf{\sc\Large Medellín}
+\end{center}
+\begin{center}
+\bf{\sc\Large 2020}\\
+\end{center}\
+\newpage
+\begin{center}
+\bf{\sc\LARGE Hilos en el microprocesador}\\
+\end{center}
+\vspace{50pt}
+\Large 
+El microprocesador es el componente electrónico encargado de realizar las tareas básicas en un computador con base a los datos e instrucciones que recibe del sistema. Este tratamiento de datos es la base para el funcionamiento del sistema operativo y todos los programas que se ejecuten, por esto este pequeño aparato es de gran importancia para la operación de los computadores.
+
+\vspace{15pt}
+Para la realización de las tareas, el procesador utiliza lo que se conoce como 'núcleos', que son pequeñas unidades dentro de sí mismo que se encargan cada una -de forma síncrona- de un proceso en específico. De esta manera se mejora el rendimiento de la CPU y su capacidad de ejecutar instrucciones de forma simultánea.
+
+\vspace{15pt}
+ Con el objetivo de mejorar la forma en la que el llegan las tareas a cada núcleo y dado que este solo puede ejecutar una instrucción a la vez se creó algo llamado 'hilos' que se encargan de controlar los tiempos de espera entre procesos. En cada uno de estos hilos -generalmente 1 o 2 por núcleo- se reparte una parte específica de la tarea a realizar, gracias a esto los tiempos de espera se verán disminuidos y de esta forma el tratamiento de los datos se optimizará. Esto facilita la ejecución del multitareas.
+ 
+\vspace{15pt}
+Contrario a lo que se cree, el núcleo no ejecuta varias tareas al tiempo, ya que como se mencionó anteriormente este solo puede procesar una a la vez. Lo que realmente sucede a nivel de hardware es que el núcleo va alternando entre las instrucciones que indica cada hilo de una forma tan rápida que da la sensación de que están sucediendo de forma simultanea. Por esta razón la velocidad con la que trabaja un procesador varía según el número de núcleos e hilos.
+
+\vspace{15pt}
+Por otra parte, los hilos también pueden ser implementados a nivel de software como instruccciones en el momento de la codificación de un programa. Los hilos comparten la misma dirección de memoria, por tanto pueden acceder a los mismos datos y modificarlos. Para que esto funcione correctamente en el código deben definirse tiempos de espera y prioridades entre los procesos.
+La creación de hilos por software depende del lenguaje de programación que se utilice, pues hay algunos como Java, Delphi o Python, en los que se pueden implementar de forma diecta debido a que cuentan con herramientas que lo permiten; por otro lado, en lenguajes como C o C++ se deben emplear librerias especiales para llevar a cabo su codificación. El proceso de creación de hilos a nivel de software aumentará en gran medida la eficiencia de la CPU, pues es mucho más rápido manejar un nuevo hilo que manejar un nuevo proceso.
+
+\vspace{15pt}
+En conclusión el rendimiento y velocidad del procesador se verán modificados por el número de núcleos e hilos que se encuentren en este, así como la forma en la que se implementan, pues estos facilitarán en gran medida el procesamiento de los datos que ingresan al sistema.
+
+\newpage
+
+\begin{thebibliography}{0}
+
+\bibitem{Garcia2017} Garcia, E. (2017). Núcleos e hilos en un procesador ¿Qué son y en qué se diferencian?. El español.
+
+Recuperado de 
+ \href{\textcolor{blue}{https://www.elespanol.com/omicrono/tecnologia/20170707/nucleos-hilos-procesador-diferencian/229478224_0.html}}
+ 
+\bibitem{Castillo2019} Castillo,J. (2019). ¿Qué son los hilos del procesador? Diferencia con los nucleos.
+
+Recuperado de 
+ \href{\textcolor{blue}{https://www.profesionalreview.com/2019/04/03/que-son-los-hilos-de-un-procesador/}}
+
+\bibitem{NN2020} (2020). Hilos. Sistemas operativos -Universidad de Sevilla.
+
+Recuperado de 
+ \href{\textcolor{blue}{https://1984.lsi.us.es/wiki-ssoo/index.php/Hilos}}
+
+\bibitem{NN2017} (2017).¿Qué son los nucleos e hilos del procesador?. El grupo informático.
+
+Recuperado de 
+ \href{\textcolor{blue}{https://www.elgrupoinformatico.com/que-son-los-nucleos-hilos-procesador-t39601.html}}
+ 
+ \bibitem{NN} Gestión de procesos. Escuela univesitaria de informática-Segovia.
+
+Recuperado de 
+\href{\textcolor{blue}{https://www2.infor.uva.es/~fjgonzalez/apuntes/Tema4.pdf}}
+ 
+\end{thebibliography}
+\end{document}
